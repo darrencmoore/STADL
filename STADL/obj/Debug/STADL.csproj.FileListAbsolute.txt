@@ -1,0 +1,5 @@
+c:\users\darrenm\documents\visual studio 2015\Projects\STADL\STADL\bin\Debug\STADL.dll
+c:\users\darrenm\documents\visual studio 2015\Projects\STADL\STADL\bin\Debug\STADL.pdb
+c:\users\darrenm\documents\visual studio 2015\Projects\STADL\STADL\obj\Debug\STADL.csprojResolveAssemblyReference.cache
+c:\users\darrenm\documents\visual studio 2015\Projects\STADL\STADL\obj\Debug\STADL.dll
+c:\users\darrenm\documents\visual studio 2015\Projects\STADL\STADL\obj\Debug\STADL.pdb
