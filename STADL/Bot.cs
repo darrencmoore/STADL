@@ -19,9 +19,9 @@ namespace STADL
 
         /// Summary
         /// Takes string passed from client.  This will be in app.config on teh client side.
-        public void DBConnection(string str)
+        public void DBConnection()
         {
-            _connStr = str;
+            _connStr = System.Configuration.ConfigurationManager.ConnectionStrings["SYSPRO_SQL_SERVER"].ConnectionString;
             // Adding a call to DBOpenConnection() to ensure we are connected
             DBOpenConnection();
         }
