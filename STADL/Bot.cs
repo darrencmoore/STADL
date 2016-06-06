@@ -17,10 +17,8 @@ namespace STADL
         private string _connStr;
 
 
-        /**
-        * Takes string passed from client.  This will be in app.config on teh client side
-        * 
-        **/
+        /// Summary
+        /// Takes string passed from client.  This will be in app.config on teh client side.
         public void DBConnection(string str)
         {
             _connStr = str;
@@ -28,9 +26,8 @@ namespace STADL
             DBOpenConnection();
         }
 
-        /**
-         * Open Database Connection 
-        **/ 
+        /// Summary
+        /// Open Database Connection
         public bool DBOpenConnection()
         {
             try
@@ -45,9 +42,8 @@ namespace STADL
             }
         }
 
-        /**
-         * Close Database Connection 
-        **/
+        /// Summary
+        /// Close Database Connection
         public bool DBCloseConnection()
         {
             try
@@ -64,11 +60,11 @@ namespace STADL
         }
 
 
-        /**
-         * Select Function
-         * Takes in Sql command as a parameter. 
-         * Reurns a SqlReader Object is successful, otherwise returns null.
-        **/
+
+        /// Summary
+        /// Select Function
+        /// Takes in Sql command as a parameter. 
+        /// Reurns a SqlReader Object is successful, otherwise returns null.
         public SqlDataReader Select(string sql)
         {
             try
@@ -87,11 +83,10 @@ namespace STADL
             }
         }
 
-        /**
-         * Insert Function
-         * Takes in Sql command as a parameter.
-         * Returns "Sucessfully Saved" if successful, otherwise returns exception. 
-        **/
+        /// Summary
+        /// Insert Function
+        /// Takes in Sql command as a parameter.
+        /// Returns "Sucessfully Saved" if successful, otherwise returns exception.
         public string Insert(string sql)
         {
             try
@@ -106,13 +101,12 @@ namespace STADL
             {
                 return ex.ToString();
             }
-        } 
+        }
 
-        /**
-         * Update Function
-         * Takes in Sql command as a parameter.
-         * Returns "Sucessfully Updated" if successful, otherwise returns exception. 
-        **/
+        /// Summary
+        /// Update Function
+        /// Takes in Sql command as a parameter.
+        /// Returns "Sucessfully Updated" if successful, otherwise returns exception. 
         public string Update(string sql)
         {
             try
