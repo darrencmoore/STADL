@@ -52,6 +52,7 @@ namespace STADL
         {
             try
             {
+                _sqlConn = new SqlConnection(_connStr);
                 if (_sqlConn.State != ConnectionState.Closed)
                     _sqlConn.Close();
                 return true;                
