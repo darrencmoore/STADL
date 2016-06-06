@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace STADL
 {
@@ -21,7 +22,7 @@ namespace STADL
         /// Takes string passed from client.  This will be in app.config on teh client side.
         public void DBConnection()
         {
-            _connStr = System.Configuration.ConfigurationManager.ConnectionStrings["SYSPRO_SQL_SERVER"].ConnectionString;
+            _connStr = ConfigurationManager.ConnectionStrings["SYSPRO_SQL_SERVER"].ConnectionString;
             // Adding a call to DBOpenConnection() to ensure we are connected
             DBOpenConnection();
         }
