@@ -61,8 +61,6 @@ namespace STADL
             }
         }
 
-
-
         /// Summary
         /// Select Function
         /// Takes in Sql command as a parameter. 
