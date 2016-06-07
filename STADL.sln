@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STADL", "STADL\STADL.csproj", "{FF5C690F-DEC7-457A-8350-DA8DE1D510DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STADLTestHarness", "..\..\Documents\Visual Studio 2015\Projects\STADLTestHarness\STADLTestHarness\STADLTestHarness.csproj", "{9B1C72F3-DE3D-4E46-A6D6-F9D83B0925BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STADLTestHarness", "..\STADLTestHarness\STADLTestHarness\STADLTestHarness.csproj", "{9B1C72F3-DE3D-4E46-A6D6-F9D83B0925BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
