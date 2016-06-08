@@ -37,7 +37,9 @@ namespace STADL
             {
                 _sqlConn = new SqlConnection(_connStr);
                 _sqlConn.Open();
-                return true;
+                string testSqlSelect = ("SELECT * FROM [CompanyTEST].[dbo].[ZContractContacts] WHERE ID = '10'");
+                Select(testSqlSelect);
+                return true;                
             }
             catch(Exception ex)
             {
@@ -70,8 +72,8 @@ namespace STADL
         {
             try
             {
-                SqlDataReader sqlReader;
-
+                SqlDataReader sqlReader;                
+                _connStr = ConfigurationManager.ConnectionStrings["SYSPRO_SQL_SERVER"].ConnectionString;
                 DBOpenConnection();
                 _sqlCommand = new SqlCommand(sql, _sqlConn);
                 sqlReader = _sqlCommand.ExecuteReader();

@@ -3,7 +3,9 @@ c:\users\darrenm\documents\visual studio 2015\Projects\STADL\STADL\bin\Debug\STA
 c:\users\darrenm\documents\visual studio 2015\Projects\STADL\STADL\obj\Debug\STADL.csprojResolveAssemblyReference.cache
 c:\users\darrenm\documents\visual studio 2015\Projects\STADL\STADL\obj\Debug\STADL.dll
 c:\users\darrenm\documents\visual studio 2015\Projects\STADL\STADL\obj\Debug\STADL.pdb
+C:\Users\darrenm\Desktop\STADL\STADL\bin\Debug\STADL.dll.config
 C:\Users\darrenm\Desktop\STADL\STADL\bin\Debug\STADL.dll
 C:\Users\darrenm\Desktop\STADL\STADL\bin\Debug\STADL.pdb
+C:\Users\darrenm\Desktop\STADL\STADL\obj\Debug\STADL.csprojResolveAssemblyReference.cache
 C:\Users\darrenm\Desktop\STADL\STADL\obj\Debug\STADL.dll
 C:\Users\darrenm\Desktop\STADL\STADL\obj\Debug\STADL.pdb
