@@ -39,6 +39,7 @@ namespace STADL
                 _sqlConn.Open();
                 string testSqlSelect = ("SELECT * FROM [CompanyTEST].[dbo].[ZContractContacts] WHERE ID = '10'");
                 Select(testSqlSelect);
+                Console.WriteLine("Select");
                 return true;                
             }
             catch(Exception ex)
