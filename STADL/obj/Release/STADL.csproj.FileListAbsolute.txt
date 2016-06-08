@@ -1,0 +1,6 @@
+C:\Users\darrenm\Desktop\STADL\STADL\bin\Release\STADL.dll.config
+C:\Users\darrenm\Desktop\STADL\STADL\bin\Release\STADL.dll
+C:\Users\darrenm\Desktop\STADL\STADL\bin\Release\STADL.pdb
+C:\Users\darrenm\Desktop\STADL\STADL\obj\Release\STADL.csprojResolveAssemblyReference.cache
+C:\Users\darrenm\Desktop\STADL\STADL\obj\Release\STADL.dll
+C:\Users\darrenm\Desktop\STADL\STADL\obj\Release\STADL.pdb
