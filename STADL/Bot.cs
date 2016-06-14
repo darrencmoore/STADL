@@ -17,14 +17,12 @@ namespace STADL
         private SqlConnection _sqlConn;
         private SqlCommand _sqlCommand;
         private string _connStr;
-        // all public varibales start with the table name after the underscore is the field
-        public Decimal zContractContacts_ID; // Array Value {0}
+        public Decimal zContractContacts_ID;  // Array Value {0}
         public String zContractContacts_Contract; // Array Value {1}
         public String zContractContacts_Account; // Array Value {2}
         public String zContractContacts_AccountName; // Array Value {3}
         // Skipping ContactID from zContractContacts Table 
         public String zContractContacts_ContactFullName; // Array Value {5}
-
 
 
         /// Summary
@@ -48,6 +46,21 @@ namespace STADL
                 return true;                
             }
             catch(Exception ex)
+            {
+                return false;
+            }
+        }
+
+        //overload method
+        public bool DBOpenConnection(string connection)
+        {
+            try
+            {
+                _sqlConn = new SqlConnection(connection);
+                _sqlConn.Open();
+                return true;
+            }
+            catch (Exception ex)
             {
                 return false;
             }
@@ -78,7 +91,6 @@ namespace STADL
         {
             try
             {
-                int v = 0;
                 SqlDataReader sqlReader;                
                 _connStr = ConfigurationManager.ConnectionStrings["SYSPRO_SQL_SERVER"].ConnectionString;
                 DBOpenConnection();
@@ -88,15 +100,14 @@ namespace STADL
                 if(sqlReader.HasRows)
                 {
                     while (sqlReader.Read())
-                    {
+                    {                        
                         zContractContacts_ID = sqlReader.GetDecimal(0);
                         zContractContacts_Contract = sqlReader.GetString(1);
                         zContractContacts_Account = sqlReader.GetString(2);
-                        zContractContacts_AccountName = sqlReader.GetString(3);
+                        zContractContacts_AccountName = sqlReader.GetString(3);                        
                         // Skipping ContactID
                         zContractContacts_ContactFullName = sqlReader.GetString(5);
-                        Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}\t{5}", sqlReader.GetDecimal(0), sqlReader.GetString(1), sqlReader.GetString(2), sqlReader.GetString(3), sqlReader.GetGuid(4), sqlReader.GetString(5));
-                        //if(sqlReader["ID"] != DBNull.Value) { SelectResponseTextBox.Text = sqlReader["ID"]; }
+                        Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}\t{5}", sqlReader.GetDecimal(0), sqlReader.GetString(1), sqlReader.GetString(2), sqlReader.GetString(3), sqlReader.GetGuid(4), sqlReader.GetString(5));                       
                     }
                 }
                 else
